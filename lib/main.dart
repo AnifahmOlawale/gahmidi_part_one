@@ -112,6 +112,22 @@ Future<void> main() async {
   } catch (e) {
     //
   }
+  // runApp(
+  //   DevicePreview(
+  //     enabled: !kReleaseMode,
+  //     builder: (context) {
+  //       return MultiProvider(
+  //         providers: [
+  //           ChangeNotifierProvider(create: (_) => ThemeColor()),
+  //           ChangeNotifierProvider(create: (_) => QuranSettings()),
+  //           ChangeNotifierProvider(create: (_) => QuranCsv()),
+  //           ChangeNotifierProvider<PlayerProvider>.value(value: playerProvider),
+  //         ],
+  //         child: const MyApp(),
+  //       );
+  //     },
+  //   ),
+  // );
 
   runApp(
     MultiProvider(
